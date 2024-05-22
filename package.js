@@ -1,0 +1,28 @@
+{
+  "name": "netsuite-oauth",
+  "version": "1.0.0",
+  "description": "NetSuite Token Based Authentication Module",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qurban-ali/netsuite-oauth.git"
+  },
+  "keywords": [
+    "tba",
+    "oauth",
+    "netsuite",
+    "restlet"
+  ],
+  "author": "Qurban Ali",
+  "bugs": {
+    "url": "https://github.com/qurban-ali/netsuite-oauth/issues"
+  },
+  "homepage": "https://github.com/qurban-ali/netsuite-oauth#readme",
+  "dependencies": {
+    "oauth-1.0a": "^2.2.4",
+    "request": "^2.88.0"
+  }
+}
