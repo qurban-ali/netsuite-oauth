@@ -17,6 +17,7 @@
     "restlet"
   ],
   "author": "Qurban Ali",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/qurban-ali/netsuite-oauth/issues"
   },
