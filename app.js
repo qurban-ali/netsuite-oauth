@@ -17,10 +17,12 @@ module.exports = NetSuiteOAuth;
  * @param tokenId
  * @param tokenSecret
  * @param account
+ * @param offset
+ * 
  * @returns {PromiseLike<ArrayBuffer>}
  * @constructor
  */
-function NetSuiteOAuth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account) {
+function NetSuiteOAuth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account, offset = 0) {
     this.oauth = OAuth({
         consumer: {
             key: consumerKey,
@@ -34,7 +36,7 @@ function NetSuiteOAuth(url, method, consumerKey, consumerSecret, tokenId, tokenS
     });
 
     this.request_data = {
-        url: url,
+        url: `${url}?limit=1000&offset=${offset}`,
         method: method
     };
 

@@ -35,7 +35,7 @@ const tokenId = 'token-id';
 const tokenSecret = 'token-secret';
 const account = 'account Id';
 
-const oauth = new NetSuiteOauth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account);
+const oauth = new NetSuiteOauth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account, offset = 0);
 
 oauth.get().then(response => console.log(response));
 ```
