@@ -25,7 +25,7 @@ Open a terminal session and enter the following command:
 Example of GET request
 
 ```javascript
-const NetSuiteOauth = require('netsuite-tba-oauth');
+const NetSuiteOauth = require('netsuite-oauth');
 
 const url = 'restlet-url';
 const method = 'GET';
@@ -35,7 +35,7 @@ const tokenId = 'token-id';
 const tokenSecret = 'token-secret';
 const account = 'account Id';
 
-const oauth = new NetSuiteOauth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account, offset = 0);
+const oauth = new NetSuiteOauth(url, method, consumerKey, consumerSecret, tokenId, tokenSecret, account, 0);
 
 oauth.get().then(response => console.log(response));
 ```
@@ -43,10 +43,10 @@ oauth.get().then(response => console.log(response));
 Example of POST request
 
 ```javascript
-const NetSuiteOauth = require('netsuite-tba-oauth');
+const NetSuiteOauth = require('netsuite-oauth');
 
 const url = 'restlet-url';
-const method = 'GET';
+const method = 'POST';
 const consumerKey = 'your-consumer-key';
 const consumerSecret = 'your-consumer-secret';
 const tokenId = 'token-id';
